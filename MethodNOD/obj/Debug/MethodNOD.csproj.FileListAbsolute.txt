@@ -1,0 +1,5 @@
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\MethodNOD\bin\Debug\MethodNOD.dll
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\MethodNOD\bin\Debug\MethodNOD.pdb
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\MethodNOD\obj\Debug\MethodNOD.csprojResolveAssemblyReference.cache
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\MethodNOD\obj\Debug\MethodNOD.dll
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\MethodNOD\obj\Debug\MethodNOD.pdb

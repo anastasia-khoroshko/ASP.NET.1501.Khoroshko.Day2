@@ -1,0 +1,7 @@
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\TestMethodsNOD\bin\Debug\TestMethodsNOD.dll
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\TestMethodsNOD\bin\Debug\TestMethodsNOD.pdb
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\TestMethodsNOD\bin\Debug\MethodNOD.dll
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\TestMethodsNOD\bin\Debug\MethodNOD.pdb
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\TestMethodsNOD\obj\Debug\TestMethodsNOD.csprojResolveAssemblyReference.cache
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\TestMethodsNOD\obj\Debug\TestMethodsNOD.dll
+C:\Users\User\documents\visual studio 2013\Projects\ASP.NET.1501.Khoroshko.Day2\TestMethodsNOD\obj\Debug\TestMethodsNOD.pdb
