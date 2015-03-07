@@ -9,34 +9,34 @@ namespace MethodNOD
 {
     public static class AlgorithmNOD
     {
-        public static int MethodEvklida(int a, int b, out TimeSpan time)
+        public static int MethodEvklida(out long time, int a, int b)
         {
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
             while (b != 0)
                 b = a % (a = b);
             stopWatch.Stop();
-            time = stopWatch.Elapsed;
+            time = stopWatch.ElapsedTicks;
             return a;
         }
 
-        public static int MethodEvklidaThreeArgum(int a, int b, int c, out TimeSpan time)
+        public static int MethodEvklidaThreeArgum(out long time, int a, int b, int c)
         {
-            TimeSpan time1;
-            int nodTwo = MethodEvklida(a, b, out time1);
-            int nodThree = MethodEvklida(nodTwo, c, out time);
+            long time1;
+            int nodTwo = MethodEvklida(out time1,a, b);
+            int nodThree = MethodEvklida(out time,nodTwo, c);
             time += time1;
             return nodThree;
         }
 
-        public static int MethodEvklidaParamsArgum(out TimeSpan time, params int[] value)
+        public static int MethodEvklidaParamsArgum(out long time, params int[] value)
         {
             int temp = value[0];
             int resNod = 0;
-            TimeSpan tempTime, resTime = new TimeSpan(0, 0, 0);
+            long tempTime, resTime =0;
             for (int i = 1; i < value.Length; i++)
             {
-                resNod = MethodEvklida(temp, value[i], out tempTime);
+                resNod = MethodEvklida(out tempTime,temp, value[i]);
                 temp = resNod;
                 resTime += tempTime;
             }
@@ -44,7 +44,7 @@ namespace MethodNOD
             return resNod;
         }
 
-        public static int MethodSchteina(int a, int b, out TimeSpan time)
+        public static int MethodSchteina(out long time,int a, int b)
         {
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -52,7 +52,7 @@ namespace MethodNOD
             if (a == 0 || b == 0)
             {
                 stopWatch.Stop();
-                time = stopWatch.Elapsed;
+                time = stopWatch.ElapsedTicks;
                 return a | b;
             }
             for (k = 0; ((a | b) & 1) == 0; ++k)
@@ -78,27 +78,27 @@ namespace MethodNOD
             } while (b != 0);
 
             stopWatch.Stop();
-            time = stopWatch.Elapsed;
+            time = stopWatch.ElapsedTicks;
             return a << k;
         }
 
-        public static int MethodSchteinaThreeArgum(int a, int b, int c, out TimeSpan time)
+        public static int MethodSchteinaThreeArgum(out long time, int a, int b, int c)
         {
-            TimeSpan time1;
-            int nodTwo = MethodSchteina(a, b, out time1);
-            int nodThree = MethodSchteina(c, nodTwo, out time);
+            long time1;
+            int nodTwo = MethodSchteina(out time1,a, b);
+            int nodThree = MethodSchteina(out time,c, nodTwo);
             time += time1;
             return nodThree;
         }
 
-        public static int MethodSchteinaParamsArgum(out TimeSpan time, params int[] value)
+        public static int MethodSchteinaParamsArgum(out long time, params int[] value)
         {
             int temp = value[0];
             int resNod = 0;
-            TimeSpan tempTime, resTime = new TimeSpan(0, 0, 0);
+            long tempTime, resTime = 0;
             for (int i = 1; i < value.Length; i++)
             {
-                resNod = MethodSchteina(temp, value[i], out tempTime);
+                resNod = MethodSchteina(out tempTime,temp, value[i]);
                 temp = resNod;
                 resTime += tempTime;
             }
