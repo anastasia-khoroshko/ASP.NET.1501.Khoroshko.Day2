@@ -20,7 +20,7 @@ namespace TestMethodsNOD
         public void TestMethodEvklidaThreeArgum()
         {
             long time;
-            Assert.AreEqual(AlgorithmNOD.MethodEvklidaThreeArgum(out time,30, 18, 3), 3);
+            Assert.AreEqual(AlgorithmNOD.MethodEvklida(out time,30, 18, 3), 3);
             Debug.WriteLine(time);
         }
 
@@ -28,7 +28,7 @@ namespace TestMethodsNOD
         public void TestMethodEvklidaParamsArgum()
         {
             long time;
-            Assert.AreEqual(AlgorithmNOD.MethodEvklidaParamsArgum(out time,30, 18, 6, 3), 3);
+            Assert.AreEqual(AlgorithmNOD.MethodEvklida(out time,30, 18, 6, 3), 3);
             Debug.WriteLine(time);
         }
 
@@ -44,16 +44,16 @@ namespace TestMethodsNOD
         public void TestMethodSteinaThreeArgum()
         {
             long time;
-            Assert.AreEqual(AlgorithmNOD.MethodSchteinaThreeArgum(out time,30, 15, 5), 5);
+            Assert.AreEqual(AlgorithmNOD.MethodSchteina(out time,30, 15, 5), 5);
             Debug.WriteLine(time);
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void TestMethodSteinaParamsArgum()
         {
             long time;
-            Assert.AreEqual(AlgorithmNOD.MethodSchteinaParamsArgum(out time,30,18,9,6,3), 3);
-            Debug.WriteLine(time);
+            int res=AlgorithmNOD.MethodSchteina(out time);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace MethodNOD
             return a;
         }
 
-        public static int MethodEvklidaThreeArgum(out long time, int a, int b, int c)
+        public static int MethodEvklida(out long time, int a, int b, int c)
         {
             long time1;
             int nodTwo = MethodEvklida(out time1,a, b);
@@ -29,9 +29,17 @@ namespace MethodNOD
             return nodThree;
         }
 
-        public static int MethodEvklidaParamsArgum(out long time, params int[] value)
+        public static int MethodEvklida(out long time, params int[] value)
         {
-            int temp = value[0];
+            int temp;
+            try
+            {
+                temp = value[0];
+            }
+            catch (IndexOutOfRangeException)
+            {
+                throw new ArgumentNullException("Null arguments");
+            }
             int resNod = 0;
             long tempTime, resTime =0;
             for (int i = 1; i < value.Length; i++)
@@ -82,7 +90,7 @@ namespace MethodNOD
             return a << k;
         }
 
-        public static int MethodSchteinaThreeArgum(out long time, int a, int b, int c)
+        public static int MethodSchteina(out long time, int a, int b, int c)
         {
             long time1;
             int nodTwo = MethodSchteina(out time1,a, b);
@@ -91,9 +99,17 @@ namespace MethodNOD
             return nodThree;
         }
 
-        public static int MethodSchteinaParamsArgum(out long time, params int[] value)
+        public static int MethodSchteina(out long time, params int[] value)
         {
-            int temp = value[0];
+            int temp;
+            try
+            {
+                temp = value[0];
+            }
+            catch(IndexOutOfRangeException)
+            {
+                throw new ArgumentNullException("Null arguments");
+            }
             int resNod = 0;
             long tempTime, resTime = 0;
             for (int i = 1; i < value.Length; i++)
